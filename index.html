@@ -262,7 +262,7 @@ footer a:hover{color:var(--green)}
       <p class="ticket-urgent">Seats are limited — so get in <strong>EARLY!</strong></p>
       <div class="cta-row" style="margin-top:1rem">
         <a href="https://square.link/u/CJN2SGbu" class="btn btn-solid" target="_blank" rel="noopener">Buy Tickets</a>
-        <span class="btn btn-disabled" aria-disabled="true" title="Nominations opening soon">Nominations opening soon</span>
+        <a href="https://awards.judgify.me/QueenslandWahineinBusinessAwards2026" class="btn btn-solid" target="_blank" rel="noopener">Nominate Now</a>
         <a href="mailto:admin@totoru.com.au?subject=QWIB%202026%20Enquiry" class="btn btn-ghost">Enquire about QWIB 2026</a>
       </div>
       <p class="body" style="margin-top:2rem">A night to honour the contribution Māori and Pasifika wahine make to the Queensland business landscape — the founders and leaders whose work shapes our communities. Sponsorship and nominations open ahead of each year’s event.</p>
@@ -355,6 +355,11 @@ addEventListener('scroll', ()=> hdr.classList.toggle('scrolled', scrollY>60), {p
 // reveal on scroll
 const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.16});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
 
 document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
